@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    
+    <!-- Prevent Search Engines and Bots from Indexing this Page -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParams() {
+            return window.location.search; // Get everything after the "?" in the URL
+        }
+
+        // Define the base destination URL
+        var destination = "https://chrisdots.one/commerce/invitation";
+
+        // Append query parameters if they exist
+        var fullRedirectURL = destination + getQueryParams();
+
+        // Redirect instantly
+        window.location.replace(fullRedirectURL);
+    </script>
+    
+    <!-- Meta refresh (Backup for non-JS users, though it won't carry parameters) -->
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=https://chrisdots.one/commerce/invitation">
+    </noscript>
+
+</head>
+<body>
+</body>
+</html>
